@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>更新用户</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../css/oksub.css">
+</head>
+
+<body>
+    <div class="ok-body">
+        <!--form表单-->
+        <form class="layui-form ok-form" lay-filter="filter">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">编码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="code" placeholder="请输入编码" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">所属地区</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" placeholder="请输入所属地区" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">行政等级</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="level" placeholder="请输入行政等级" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="unitname" placeholder="请输入名称" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">会议室面积</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="meetingarea" placeholder="请输入会议室面积" autocomplete="off"
+                            class="layui-input"  lay-verify="number">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">装修年份</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="fitupyear" name="fitupyear" placeholder="请输入装修年份" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">可容纳人数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="capacity" placeholder="请输入可容纳人数" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">主显示设备</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="displaydevice" placeholder="请输入主显示设备" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">摄像头数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="cameranumber" placeholder="请输入摄像头数量" autocomplete="off" class="layui-input"
+                        lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">显示设备分辨率</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="displayresolution" placeholder="请输入显示设备分辨率" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">主位摄像头品牌型号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="camerabrand" placeholder="请输入主位摄像头品牌型号" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">显示设备主屏幕尺寸</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="screensize" placeholder="请输入显示设备主屏幕尺寸" autocomplete="off" class="layui-input"
+                        lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">主位摄像头分辨率</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="cameraresolution" placeholder="请输入主位摄像头分辨率" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">终端品牌型号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="terminalbrandmodel" placeholder="请输入终端品牌型号" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">话筒总数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="microphonenumber" placeholder="请输入话筒总数" autocomplete="off" class="layui-input"
+                        lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">终端IP地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="terminalip" placeholder="请输入终端IP地址" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">矩阵输入线路总数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="inputlinenumber" placeholder="请输入矩阵输入线路总数" autocomplete="off" class="layui-input"
+                        lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">矩阵切换器品牌型号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="kvmbrand" placeholder="请输入矩阵切换器品牌型号" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">矩阵输出线路总数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="outputline" placeholder="请输入矩阵输出线路总数" autocomplete="off" class="layui-input"
+                        lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">中控品牌型号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="supconbrand" placeholder="请输入中控品牌型号" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否为专用会商室</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="isspecialmeetingroom" value="是" title="是" checked>
+                        <input type="radio" name="isspecialmeetingroom" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">话筒类型</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="microphonetype" placeholder="请输入话筒类型" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否有独立中控系统</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="isindependentsupcon" value="是" title="是" checked>
+                        <input type="radio" name="isindependentsupcon" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">矩阵切换器类型</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="kvmtype" placeholder="请输入矩阵切换器类型" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+
+                <div class="layui-inline" style="visibility: hidden;">
+                    <label class="layui-form-label">id</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="id" placeholder="id" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="edit">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--js逻辑-->
+    <script src="../../lib/layui/layui.js"></script>
+    <script>
+        let initData;
+
+        function initForm(data) {
+            let form = layui.form;
+            initData = null;
+            let jsonString = JSON.stringify(data);
+            initData = JSON.parse(jsonString);
+            form.val("filter", initData);
+        }
+
+        layui.use(["element", "form", "laydate", "okLayer", "okUtils"], function () {
+            let form = layui.form;
+            let laydate = layui.laydate;
+            let okLayer = layui.okLayer;
+            let okUtils = layui.okUtils;
+
+            laydate.render({ elem: "#birthday", type: "datetime" });
+
+            form.verify({
+               intnumber: [/^$|^\s*[1-9]\d*\s*$/, '请输入整数']
+            });
+
+            form.on("submit(edit)", function (data) {
+                okUtils.ajax("updateTraditionalconsult", "put", data.field, true).done(function (response) {
+                    console.log(response);
+                    okLayer.greenTickMsg("编辑成功", function () {
+                        parent.layer.close(parent.layer.getFrameIndex(window.name));
+                    });
+                }).fail(function (error) {
+                    // console.log(error)
+                });
+                return false;
+            });
+        })
+    </script>
+</body>
+
+</html>

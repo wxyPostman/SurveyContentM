@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../css/oksub.css">
+</head>
+
+<body>
+    <div class="ok-body">
+        <!--form表单-->
+
+        <form class="layui-form ok-form" lay-filter="filter">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">编码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="code" placeholder="请输入编码" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">所属地区</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" placeholder="请输入所属地区" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">行政等级</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="level" placeholder="请输入行政等级" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="unitname" placeholder="请输入名称" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">计算机终端数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="computerterminalnumber" placeholder="计算机终端数" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label">无人机</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="uav" placeholder="请输入无人机" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">固定卫星小站</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="fixedsatellitestation" placeholder="请输入固定卫星小站" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">便携卫星小站</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="portablesatellitestation" placeholder="请输入便携卫星小站" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">其他卫星设施</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="othersatellitefacilities" placeholder="请输入其他卫星设施" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">北斗卫星短信报汛</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="beidoufloodreport" placeholder="请输入北斗卫星短信报汛" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">定位</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="fixedposition" placeholder="请输入定位" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">动中通</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="dongzhongtong" placeholder="请输入动中通" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">静中通</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="jingzhongtong" placeholder="请输入静中通" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">集群通信终端</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="clusterterminal" placeholder="请输入集群通信终端" autocomplete="off"
+                            class="layui-input"   lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">微波通信线路长度</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="microwavelinelength" placeholder="请输入微波通信线路长度" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">其它通信手段名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="othercommunication" placeholder="请输入其它通信手段名称" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">其它通信手段站数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="othercommunicationnumber" placeholder="请输入其它通信手段站数" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">微波通信中继站数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="relaystationnumber" placeholder="请输入微波通信中继站数" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">其它通信手路线长度</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="othercommunicationlinelength" placeholder="请输入其它通信手路线长度" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+              
+                
+                <div class="layui-inline" style="visibility: hidden;">
+                    <label class="layui-form-label">id</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="id" placeholder="id" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="add">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--js逻辑-->
+    <script src="../../lib/layui/layui.js"></script>
+    <script>
+        layui.use(["element", "form", "laydate", "okLayer", "okUtils"], function () {
+            let form = layui.form;
+            let laydate = layui.laydate;
+            let okLayer = layui.okLayer;
+            let okUtils = layui.okUtils;
+
+            laydate.render({ elem: "#fitupyear", type: "year" });
+            form.verify({
+               intnumber: [/^$|^\s*[1-9]\d*\s*$/, '请输入整数']
+            });
+
+            form.on("submit(add)", function (data) {
+                okUtils.ajax("addHardware", "post", data.field, true).done(function (response) {
+                    console.log(response);
+                    okLayer.greenTickMsg("添加成功", function () {
+                        parent.layer.close(parent.layer.getFrameIndex(window.name));
+                    });
+                }).fail(function (error) {
+                    console.log(error)
+                });
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

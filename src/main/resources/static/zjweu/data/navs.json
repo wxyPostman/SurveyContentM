@@ -1,0 +1,125 @@
+[
+
+    {
+        "title": "水利信息化管理工作",
+        "href": "",
+        "fontFamily": "ok-icon",
+        "icon": "&#xe6b8;",
+        "children": [
+            {
+                "title": "主要从事信息化工作人员情况调查表",
+                "href": "pages/Infoworkers/Info.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "规划和制度情况调查表",
+                "href": "pages/systemplan/systemplan.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "技术规范调查表",
+                "href": "pages/specifications/specifications.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "培训调查表",
+                "href": "pages/train/train.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "软件正版化工作调查表",
+                "href": "pages/softwarelegal/softwarelegal.html",
+                "icon": "layui-icon-survey"
+            }
+        ]
+    },
+    {
+        "title": "视频会议系统与管理",
+        "href": "",
+        "fontFamily": "ok-icon",
+        "icon": "&#xe6b8;",
+        "children": [
+            {
+                "title": "会商系统基本信息",
+                "href": "pages/consultation/consultation.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "视联网会议室列表",
+                "href": "pages/visualnet/visualnet.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "传统会商系统会议室",
+                "href": "pages/traditionalconsult/traditionalconsult.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "乡镇(街道)/村(社区)视频会议系统接入情况调查表",
+                "href": "pages/townshipvideo/townshipvideo.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "年度视频会议情况调查表",
+                "href": "pages/annualcvideo/annualcvideo.html",
+                "icon": "layui-icon-survey"
+            }
+        ]
+    },
+    {
+        "title": "水利信息基础设施与数据资源",
+        "href": "",
+        "fontFamily": "ok-icon",
+        "icon": "&#xe6b8;",
+        "children": [
+            {
+                "title": "信息采集服务",
+                "href": "pages/infocollection/infocollection.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "视频监控系统数及监控点数调查表",
+                "href": "pages/videomonitor/videomonitor.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "自建服务器机房情况调查表",
+                "href": "pages/serverroom/serverroom.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "硬件及通信设备情况调查表",
+                "href": "pages/hardware/hardware.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "网络接入与安全情况调查表",
+                "href": "pages/networkaccess/networkaccess.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "云应用调查表",
+                "href": "pages/cloudapp/cloudapp.html",
+                "icon": "layui-icon-survey"
+            },
+            {
+                "title": "智能监测监控情况调查表",
+                "href": "pages/intelligentdetect/intelligentdetect.html",
+                "icon": "layui-icon-survey"
+            }
+        ]
+    },
+    {
+        "title": "水利信息系统建设、管理与安全",
+        "href": "",
+        "fontFamily": "ok-icon",
+        "icon": "&#xe6b8;",
+        "children": [
+            {
+                "title": "年度信息化新建/在建项目及投资情况调查表",
+                "href": "pages/projectinvest/projectinvest.html",
+                "icon": "layui-icon-survey"
+            }
+        ]
+    }
+]

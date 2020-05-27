@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../css/oksub.css">
+</head>
+
+<body>
+    <div class="ok-body">
+        <!--form表单-->
+
+        <form class="layui-form ok-form" lay-filter="filter">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">编码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="code" placeholder="请输入编码" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">所属地区</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" placeholder="请输入所属地区" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">行政等级</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="level" placeholder="请输入行政等级" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="unitname" placeholder="请输入名称" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">机房面积</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="computerroomarea" placeholder="请输入机房面积" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label">监控头总数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="monitorsum" placeholder="请输入监控头总数" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">监控录像保留时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="videotapeholdtime" placeholder="请输入监控录像保留时间" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">服务器总数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="totalserversum" placeholder="请输入服务器总数" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">塔式服务器数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="towerservernumber" placeholder="请输入塔式服务器数量" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">刀片式服务器数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="bladeservernumber" placeholder="请输入刀片式服务器数量" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">机架式服务器数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="rackservernumber" placeholder="请输入机架式服务器数量" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">服务器机柜数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="servercabinetnumber" placeholder="请输入服务器机柜数" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">虚拟机数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="virtualmachinenumber" placeholder="请输入虚拟机数量" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">虚拟机管理软件型号版本</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="softwaremodel" placeholder="请输入虚拟机管理软件型号版本" autocomplete="off"
+                            class="layui-input"  >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否有自建机房</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="haveselfbuiltmachineroom" value="是" title="是" checked>
+                        <input type="radio" name="haveselfbuiltmachineroom" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否装备恒温空调</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="haveclimatecontrol" value="是" title="是" checked>
+                        <input type="radio" name="haveclimatecontrol" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否配有自动消控</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="haveautomaticcontrol" value="是" title="是" checked>
+                        <input type="radio" name="haveautomaticcontrol" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否有门禁</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="haveaccesscontrol" value="是" title="是" checked>
+                        <input type="radio" name="haveaccesscontrol" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否有不间断电源</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="haveups" value="是" title="是" checked>
+                        <input type="radio" name="haveups" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否建有机房视频监控系统</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="havecomputerroommonitor" value="是" title="是" checked>
+                        <input type="radio" name="havecomputerroommonitor" value="否" title="否">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">摄像头类型</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="cameratype" placeholder="请输入摄像头类型" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">服务器管理方式</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="servermanagementmode" placeholder="请输入服务器管理方式" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+              
+                
+                <div class="layui-inline" style="visibility: hidden;">
+                    <label class="layui-form-label">id</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="id" placeholder="id" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="add">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--js逻辑-->
+    <script src="../../lib/layui/layui.js"></script>
+    <script>
+        layui.use(["element", "form", "laydate", "okLayer", "okUtils"], function () {
+            let form = layui.form;
+            let laydate = layui.laydate;
+            let okLayer = layui.okLayer;
+            let okUtils = layui.okUtils;
+
+            laydate.render({ elem: "#fitupyear", type: "year" });
+            form.verify({
+               intnumber: [/^$|^\s*[1-9]\d*\s*$/, '请输入整数']
+            });
+
+            form.on("submit(add)", function (data) {
+                okUtils.ajax("addServerroom", "post", data.field, true).done(function (response) {
+                    console.log(response);
+                    okLayer.greenTickMsg("添加成功", function () {
+                        parent.layer.close(parent.layer.getFrameIndex(window.name));
+                    });
+                }).fail(function (error) {
+                    console.log(error)
+                });
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

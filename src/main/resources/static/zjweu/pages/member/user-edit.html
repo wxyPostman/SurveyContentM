@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>更新用户</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../css/oksub.css">
+</head>
+
+<body>
+    <div class="ok-body">
+        <!--form表单-->
+        <form class="layui-form ok-form" lay-filter="filter">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">编码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="code" placeholder="请输入编码" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">行政区划</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" placeholder="请输入区划" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">行政等级</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="level" placeholder="请输入行政等级" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">机构名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="orgname" placeholder="请输入机构名称" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否成立调查小组</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="setupteam" placeholder="请输入是否成立调查小组" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">成立时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="setuptime" name="setuptime" placeholder="请输入成立时间" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">成立文件号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="setupfile" placeholder="请输入成立文件号" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">组长姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="headmanname" placeholder="请输入组长姓名" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">组长职务</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="headmanjobtitle" placeholder="请输入组长职务" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">组长电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="headmanphone" placeholder="请输入组长电话" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">部门</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="department" placeholder="请输入组长部门" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">办公室主任姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="directorname" placeholder="请输入主任姓名" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">办公室主任职务</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="directorjobtitle" placeholder="请输入主任职务" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">办公室主任手机</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="directorphone" placeholder="请输入主任手机" autocomplete="off" class="layui-input"
+                        lay-verify="phone">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否明确信息化分管领导和职能部门</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="isclear" placeholder="请输入是否明确信息化分管领导和职能部门" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网络安全和信息化职能部门名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safedepartmentname" placeholder="请输入部门名称" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">年运维经费(万元)</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="funds" placeholder="请输入年运维经费" autocomplete="off" class="layui-input"
+                        lay-verify="number">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安领导姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeleadername" placeholder="请输入网安领导姓名" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安领导电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeleaderphone" placeholder="请输入网安领导电话" autocomplete="off" class="layui-input"
+                        lay-verify="phone">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安领导邮箱</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeleaderemail" placeholder="请输入网安领导邮箱" autocomplete="off" class="layui-input"
+                        lay-verify="email">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安领导职务</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeleaderchangjobtitle" placeholder="请输入网安领导职务" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安负责人姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safedirectorname" placeholder="请输入网安负责人姓名" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安负责人职务</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safedirectorjobtitle" placeholder="请输入网安负责人职务" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安负责人电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safedirectorjobphone" placeholder="请输入网安负责人电话" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安负责人手机</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safedirectorphone" placeholder="请输入网安负责人手机" autocomplete="off" class="layui-input"
+                        lay-verify="phone">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安负责人邮箱</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safedirectoremail" placeholder="请输入网安负责人邮箱" autocomplete="off" class="layui-input"
+                        lay-verify="email">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安联络员姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeliaisonname" placeholder="请输入网安联络员姓名" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安联络员职务</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeliaisonjobtitle" placeholder="请输入网安联络员职务" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安联络员电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeliaisonjobphone" placeholder="请输入网安联络员电话" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安联络员手机</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeliaisonphone" placeholder="请输入网安联络员手机" autocomplete="off" class="layui-input"
+                        lay-verify="phone">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安联络员邮箱</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeliaisonemail" placeholder="请输入网安联络员邮箱" autocomplete="off" class="layui-input"
+                        lay-verify="email">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">网安联络员微信</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="safeliaisonwechat" placeholder="请输入网安联络员微信" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">信息化领导机构成立文件附件名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="infoleaderfilename" placeholder="请输入信息化领导机构成立文件附件名称" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+                <div class="layui-inline" style="visibility: hidden;">
+                    <label class="layui-form-label">id</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="id" placeholder="id" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="edit">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--js逻辑-->
+    <script src="../../lib/layui/layui.js"></script>
+    <script>
+        let initData;
+
+        function initForm(data) {
+            let form = layui.form;
+            initData = null;
+            let jsonString = JSON.stringify(data);
+            initData = JSON.parse(jsonString);
+            form.val("filter", initData);
+        }
+
+        layui.use(["element", "form", "laydate", "okLayer", "okUtils"], function () {
+            let form = layui.form;
+            let laydate = layui.laydate;
+            let okLayer = layui.okLayer;
+            let okUtils = layui.okUtils;
+
+            laydate.render({ elem: "#birthday", type: "datetime" });
+
+            form.verify({
+                birthdayVerify: [/^((((1[6-9]|[2-9]\d)\d{2})-(0?[13578]|1[02])-(0?[1-9]|[12]\d|3[01]))|(((1[6-9]|[2-9]\d)\d{2})-(0?[13456789]|1[012])-(0?[1-9]|[12]\d|30))|(((1[6-9]|[2-9]\d)\d{2})-0?2-(0?[1-9]|1\d|2[0-8]))|(((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))-0?2-29-))(\s(([01]\d{1})|(2[0123])):([0-5]\d):([0-5]\d))?$/, '日期格式不正确']
+            });
+
+            form.on("submit(edit)", function (data) {
+                okUtils.ajax("updateOrganization", "put", data.field, true).done(function (response) {
+                    console.log(response);
+                    okLayer.greenTickMsg("编辑成功", function () {
+                        parent.layer.close(parent.layer.getFrameIndex(window.name));
+                    });
+                }).fail(function (error) {
+                    // console.log(error)
+                });
+                return false;
+            });
+        })
+    </script>
+</body>
+
+</html>

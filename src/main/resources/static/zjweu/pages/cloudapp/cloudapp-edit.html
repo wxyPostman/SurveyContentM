@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>更新用户</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../css/oksub.css">
+</head>
+
+<body>
+    <div class="ok-body">
+        <!--form表单-->
+        <form class="layui-form ok-form" lay-filter="filter">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">编码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="code" placeholder="请输入编码" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">所属地区</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" placeholder="请输入所属地区" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">行政等级</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="level" placeholder="请输入行政等级" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="unitname" placeholder="请输入名称" autocomplete="off" class="layui-input"
+                            lay-verify="required">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">租用政府云名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="governmentcloudname" placeholder="请输入租用政府云名称" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-inline">
+                    <label class="layui-form-label">租用政府云租用CPU数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="governmentcloudcpunumber" placeholder="请输入租用政府云租用CPU数" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">租用政府云租用存储量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="governmentcloudreserves" placeholder="请输入租用政府云租用存储量" autocomplete="off"
+                            class="layui-input"   lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">租用商业云云名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="businesscloudname" placeholder="请输入租用商业云云名称" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">租用商业云租用CPU数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="commercialcloudcpunumber" placeholder="请输入租用商业云租用CPU数" autocomplete="off"
+                            class="layui-input"   lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">租用商业云租用存储量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="commercialcloudreserves" placeholder="请输入租用商业云租用存储量" autocomplete="off"
+                            class="layui-input"  lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">自建私有云物理CPU核数</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="selfbuiltcloudcpunumber" placeholder="请输入自建私有云物理CPU核数" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">自建私有云虚拟机数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="selfbuiltcloudvirtualmachinenumber" placeholder="请输入自建私有云虚拟机数量" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">自建私有云硬件服务器数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="selfbuiltcloudservernumber" placeholder="请输入自建私有云硬件服务器数量" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">自建私有云总存储容量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="selfbuiltcloudstoragecapacity" placeholder="请输入自建私有云总存储容量" autocomplete="off"
+                            class="layui-input" lay-verify="intnumber">
+                    </div>
+                </div>
+
+                <div class="layui-inline" style="visibility: hidden;">
+                    <label class="layui-form-label">id</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="id" placeholder="id" autocomplete="off" class="layui-input"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="edit">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--js逻辑-->
+    <script src="../../lib/layui/layui.js"></script>
+    <script>
+        let initData;
+
+        function initForm(data) {
+            let form = layui.form;
+            initData = null;
+            let jsonString = JSON.stringify(data);
+            initData = JSON.parse(jsonString);
+            form.val("filter", initData);
+        }
+
+        layui.use(["element", "form", "laydate", "okLayer", "okUtils"], function () {
+            let form = layui.form;
+            let laydate = layui.laydate;
+            let okLayer = layui.okLayer;
+            let okUtils = layui.okUtils;
+
+            laydate.render({ elem: "#birthday", type: "datetime" });
+
+            form.verify({
+               intnumber: [/^$|^\s*[1-9]\d*\s*$/, '请输入整数']
+            });
+
+            form.on("submit(edit)", function (data) {
+                okUtils.ajax("updateCloudapp", "put", data.field, true).done(function (response) {
+                    console.log(response);
+                    okLayer.greenTickMsg("编辑成功", function () {
+                        parent.layer.close(parent.layer.getFrameIndex(window.name));
+                    });
+                }).fail(function (error) {
+                    // console.log(error)
+                });
+                return false;
+            });
+        })
+    </script>
+</body>
+
+</html>
